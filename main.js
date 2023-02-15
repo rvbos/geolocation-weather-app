@@ -39,6 +39,7 @@ updateWeatherData = data => {
 	const sunSet = document.querySelector('#sunSet')
 	const weatherImg = document.querySelector('#currentWeatherImg')
 	const locationLink = document.querySelector('#locationLink')
+	const lastUpdateInfo = document.querySelector('.last-update-info')
 
 	// przypisanie wcześniej pobranym spanom danych z serwera
 	temp.innerHTML = Math.round(data.main.temp) + '°C'
@@ -58,4 +59,6 @@ updateWeatherData = data => {
 
 	locationLink.innerHTML = data.name
 	locationLink.href = `https://openstreetmap.org/#map=12/${lat}/${long}`
+
+	lastUpdateInfo.innerHTML = new Date(data.dt * 1000)
 }

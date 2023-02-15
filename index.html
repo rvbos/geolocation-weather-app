@@ -11,23 +11,22 @@
 
 <body onload="startApp()">
 
-    <div class="all-content-container">
+    <div class="weather-content-container">
         <h1>WeatherApp 📍</h1>
         <table class="table w-50 mx-auto table-responsive table-hover">
+
+            <thead class="table-info table-heading">
+                <th>
+                    <img src="" id="currentWeatherImg" alt="Obrazek ze słońcem i chmurką pokazujący aktualną pogodę">
+                </th>
+                <th>
+                    <a href="#" id="locationLink" target="_blank" class="locationPlace"></a>
+                </th>
+            </thead>
             <tbody class="all-table">
-
-                <thead class="table-info table-heading">
-                    <th>
-                        <img src="" id="currentWeatherImg" alt="Aktualny obrazek pokazujący słońce i chmury">
-                    </th>
-                    <th>
-                        <a href="#" id="locationLink" target="_blank" class="locationPlace"></a>
-                    </th>
-                </thead>
-
                 <tr class="table-info">
                     <td>
-                        Temperatura:
+                        Temperature:
                     </td>
                     <td>
                         <span id="temp"></span>
@@ -35,7 +34,7 @@
                 </tr>
                 <tr class="table-info">
                     <td>
-                        Wilgotność:
+                        Humidity:
                     </td>
                     <td>
                         <span id="humidity"></span>
@@ -43,7 +42,7 @@
                 </tr>
                 <tr class="table-info">
                     <td>
-                        Ciśnienie:
+                        Pressure:
                     </td>
                     <td>
                         <span id="pressure"></span>
@@ -51,7 +50,7 @@
                 </tr>
                 <tr class="table-info">
                     <td>
-                        Zachmurzenie:
+                        Cloudiness:
                     </td>
                     <td>
                         <span id="cloudsPerc"></span>
@@ -59,7 +58,7 @@
                 </tr>
                 <tr class="table-info">
                     <td>
-                        Szybkość wiatru:
+                        Wind speed:
                     </td>
                     <td>
                         <span id="windSpeed"></span>
@@ -67,7 +66,7 @@
                 </tr>
                 <tr class="table-info">
                     <td>
-                        Wschód słońca:
+                        Sunrise:
                     </td>
                     <td>
                         <span id="sunRise"></span>
@@ -75,7 +74,7 @@
                 </tr>
                 <tr class="table-info table-last-info">
                     <td>
-                        Zachód słońca:
+                        Sunset:
                     </td>
                     <td>
                         <span id="sunSet"></span>
@@ -85,8 +84,9 @@
             </tbody>
         </table>
     </div>
-
-
+    <div class="last-update-container">
+        <p class="last-update">Last update: <span class="last-update-info"></span></p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

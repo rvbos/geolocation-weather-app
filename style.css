@@ -8,6 +8,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    flex-direction: column;
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(255, 255, 255);
@@ -21,7 +22,7 @@ h1 {
 	padding: 10px;
 }
 
-.all-content-container {
+.weather-content-container {
 	width: 800px;
 	padding: 20px 40px;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -44,4 +45,13 @@ td {
 
 .table-heading {
 	font-size: 25px;
+}
+
+.last-update-container {
+    padding-top: 20px;
+}
+
+.last-update-info, .last-update {
+    font-size: 15px;
+    color: #333;
 }
