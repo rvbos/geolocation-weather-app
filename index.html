@@ -11,19 +11,19 @@
 
 <body onload="startApp()">
 
-    <div class="container">
-        <h1>WeatherApp</h1>
+    <div class="all-content-container">
+        <h1>WeatherApp 📍</h1>
         <table class="table w-50 mx-auto table-responsive table-hover">
             <tbody class="all-table">
 
-                <tr class="table-info">
-                    <td>
+                <thead class="table-info table-heading">
+                    <th>
                         <img src="" id="currentWeatherImg" alt="Aktualny obrazek pokazujący słońce i chmury">
-                    </td>
-                    <td>
+                    </th>
+                    <th>
                         <a href="#" id="locationLink" target="_blank" class="locationPlace"></a>
-                    </td>
-                </tr>
+                    </th>
+                </thead>
 
                 <tr class="table-info">
                     <td>
@@ -73,7 +73,7 @@
                         <span id="sunRise"></span>
                     </td>
                 </tr>
-                <tr class="table-info">
+                <tr class="table-info table-last-info">
                     <td>
                         Zachód słońca:
                     </td>
