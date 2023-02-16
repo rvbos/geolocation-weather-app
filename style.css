@@ -23,7 +23,7 @@ h1 {
 	padding: 10px;
 }
 
-.weather-content-container {
+.wrapper {
 	width: 800px;
 	padding: 20px 40px;
 	border: 2px solid white;
@@ -53,11 +53,8 @@ td {
 	font-size: 25px;
 }
 
-.last-update-container {
-	padding-top: 20px;
-}
-
 .last-update-info,
 .last-update {
 	font-size: 15px;
+	padding-top: 20px;
 }
