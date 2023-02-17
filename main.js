@@ -37,7 +37,6 @@ updateWeatherData = data => {
 	const windSpeed = document.querySelector('#windSpeed')
 	const sunRise = document.querySelector('#sunRise')
 	const sunSet = document.querySelector('#sunSet')
-	const weatherImg = document.querySelector('#currentWeatherImg')
 	const locationLink = document.querySelector('#locationLink')
 	const lastUpdateInfo = document.querySelector('.last-update-info')
 
@@ -52,10 +51,6 @@ updateWeatherData = data => {
 	sunRise.innerHTML =
 		new Date(data.sys.sunrise * 1000).getHours() + ':' + new Date(data.sys.sunrise * 1000).getMinutes()
 	sunSet.innerHTML = new Date(data.sys.sunset * 1000).getHours() + ':' + new Date(data.sys.sunset * 1000).getMinutes()
-
-	// zaimportowanie obrazka
-	// let imgUrl = `http://openweathermap.org/img/wn/10d@2x.png`
-	// weatherImg.setAttribute('src', imgUrl)
 
 	locationLink.innerHTML = data.name
 	locationLink.href = `https://openstreetmap.org/#map=12/${lat}/${long}`
