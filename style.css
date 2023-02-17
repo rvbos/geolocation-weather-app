@@ -4,33 +4,32 @@
 	padding: 0;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	max-width: 1400px;
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(255, 255, 255);
 	background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-h1 {
-	text-align: center;
-	padding: 10px;
-}
-
 .wrapper {
-	width: 800px;
-	padding: 20px 40px;
-	border: 2px solid white;
-	border-radius: 25px;
 	display: flex;
 	flex-direction: column;
-
+	min-width: 55%;
+	padding: 3em 4em;
+	border: 2px solid white;
+	border-radius: 25px;
+	/* gradient */
 	backdrop-filter: blur(13px) saturate(180%);
 	-webkit-backdrop-filter: blur(13px) saturate(180%);
 	background-color: rgba(17, 25, 40, 0.66);
@@ -38,23 +37,35 @@ h1 {
 	border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
 .locationPlace {
+	font-size: 1.8rem;
 	color: #fff;
 	font-weight: bold;
 }
 
 td {
-	width: 50%;
-	padding-left: 12%;
-	padding-bottom: 8px;
+	font-size: 1.5rem;
+	width: 40%;
+	padding-left: 10%;
+	padding-bottom: 0.7em;
 }
 
 .table-heading {
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 
 .last-update-info,
 .last-update {
-	font-size: 15px;
-	padding-top: 20px;
+	font-size: 1.2rem;
+	margin-top: 1.6em;
+}
+
+.last-update {
+	text-align: center;
+	padding: 0 4em;
 }
